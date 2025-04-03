@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>HCIE笔试详解1-30 | tcmiku的档案库</title><meta name="author" content="tcmiku"><meta name="copyright" content="tcmiku"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.如图所示是某位网络工程师在排查OSPF故障时的输出信息。据此判断，以下哪种原因可能导致邻接关系无法正常建立  A.Hello 报文发送间不一攻 B.认证密码不一致 C.接口的IP地址掩码不一致 D.区域类型不一致  答案 C 解析： 直接看图中的非0数字就能得出答案。2:Netmask mismatch Netmask是“掩码”的意思  2.如图所示，路由器的所有接口开启 SPF协议，链路的C">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>HCIE笔试详解1-30 | tcmiku的档案库</title><meta name="author" content="tcmiku"><meta name="copyright" content="tcmiku"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.如图所示是某位网络工程师在排查 OSPF 故障时的输出信息。据此判断，以下哪种原因可能导致邻接关系无法正常建立  A.Hello 报文发送间不一攻 B.认证密码不一致 C.接口的 IP 地址掩码不一致 D.区域类型不一致  答案 C 解析： 直接看图中的非 0 数字就能得出答案。2: Netmask mismatch Netmask 是“掩码”的意思  2.如图所示，路由器的所有接口开启 SP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HCIE笔试详解1-30">
 <meta property="og:url" content="http://example.com/2023/09/23/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A31-30/index.html">
 <meta property="og:site_name" content="tcmiku的档案库">
-<meta property="og:description" content="1.如图所示是某位网络工程师在排查OSPF故障时的输出信息。据此判断，以下哪种原因可能导致邻接关系无法正常建立  A.Hello 报文发送间不一攻 B.认证密码不一致 C.接口的IP地址掩码不一致 D.区域类型不一致  答案 C 解析： 直接看图中的非0数字就能得出答案。2:Netmask mismatch Netmask是“掩码”的意思  2.如图所示，路由器的所有接口开启 SPF协议，链路的C">
+<meta property="og:description" content="1.如图所示是某位网络工程师在排查 OSPF 故障时的输出信息。据此判断，以下哪种原因可能导致邻接关系无法正常建立  A.Hello 报文发送间不一攻 B.认证密码不一致 C.接口的 IP 地址掩码不一致 D.区域类型不一致  答案 C 解析： 直接看图中的非 0 数字就能得出答案。2: Netmask mismatch Netmask 是“掩码”的意思  2.如图所示，路由器的所有接口开启 SP">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/tcmiku/picgo/main/img/110a080d0311a69c.jpg">
 <meta property="article:published_time" content="2023-09-23T14:30:23.000Z">
-<meta property="article:modified_time" content="2023-09-24T14:18:16.592Z">
+<meta property="article:modified_time" content="2025-04-03T05:38:42.359Z">
 <meta property="article:author" content="tcmiku">
 <meta property="article:tag" content="笔记 HCIE">
 <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-09-24 22:18:16'
+  postUpdate: '2025-04-03 13:38:42'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -169,18 +169,18 @@
 document.addEventListener('pjax:send', () => {
   Pace.restart()
 })
-</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/tx.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> tcmiku的追番列表</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> tcmiku的网页收藏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-subway"></i><span> 开往</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/tcmiku/picgo/main/img/110a080d0311a69c.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="tcmiku的档案库"><span class="site-name">tcmiku的档案库</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> tcmiku的追番列表</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> tcmiku的网页收藏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-subway"></i><span> 开往</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HCIE笔试详解1-30</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-23T14:30:23.000Z" title="发表于 2023-09-23 22:30:23">2023-09-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-24T14:18:16.592Z" title="更新于 2023-09-24 22:18:16">2023-09-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HCIE%E7%AC%94%E8%AE%B0/">HCIE笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HCIE笔试详解1-30"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>1.如图所示是某位网络工程师在排查OSPF故障时的输出信息。据此判断，以下哪种原因可能导致邻接关系无法正常建立</p>
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/tx.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> tcmiku的追番列表</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> tcmiku的网页收藏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-subway"></i><span> 开往</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/tcmiku/picgo/main/img/110a080d0311a69c.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="tcmiku的档案库"><span class="site-name">tcmiku的档案库</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> tcmiku的追番列表</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> tcmiku的网页收藏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-subway"></i><span> 开往</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HCIE笔试详解1-30</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-23T14:30:23.000Z" title="发表于 2023-09-23 22:30:23">2023-09-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-03T05:38:42.359Z" title="更新于 2025-04-03 13:38:42">2025-04-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HCIE%E7%AC%94%E8%AE%B0/">HCIE笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HCIE笔试详解1-30"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>1.如图所示是某位网络工程师在排查 OSPF 故障时的输出信息。据此判断，以下哪种原因可能导致邻接关系无法正常建立</p>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923223455.png"></p>
 <p>A.Hello 报文发送间不一攻</p>
 <p>B.认证密码不一致</p>
-<p>C.接口的IP地址掩码不一致</p>
+<p>C.接口的 IP 地址掩码不一致</p>
 <p>D.区域类型不一致</p>
 <blockquote>
 <p>答案 C</p>
 <p>解析：</p>
-<p>直接看图中的非0数字就能得出答案。2:Netmask mismatch Netmask是“<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%8E%A9%E7%A0%81&spm=1001.2101.3001.7020">掩码</a>”的意思</p>
+<p>直接看图中的非 0 数字就能得出答案。2: Netmask mismatch Netmask 是“<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%8E%A9%E7%A0%81&spm=1001.2101.3001.7020">掩码</a>”的意思</p>
 </blockquote>
-<p>2.如图所示，路由器的所有接口开启 SPF协议，链路的C st值如图中标识，R2的L pback0接口通告在区域1。据此判断，R1到达10.0.2.2&#x2F;32的c st值为以下哪一项？</p>
+<p>2.如图所示，路由器的所有接口开启 SPF 协议，链路的 C st 值如图中标识，R2 的 L pback0 接口通告在区域 1。据此判断，R1 到达 10.0.2.2&#x2F;32 的 c st 值为以下哪一项？</p>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923223817.png"></p>
 <p>A.50</p>
 <p>B.150</p>
@@ -189,70 +189,73 @@ document.addEventListener('pjax:send', () => {
 <blockquote>
 <p>答案：C</p>
 <p>解析：</p>
-<p>ospf优先选择同区域的路由</p>
-<p>OSPF选路原则 区域内优于区域间</p>
-<p>R2的Loopback0接口通告在区域1，R1也在区域1同区域之间互传cost值200。</p>
+<p>ospf 优先选择同区域的路由</p>
+<p>OSPF 选路原则 区域内优于区域间</p>
+<p>R2 的 Loopback0 接口通告在区域 1，R1 也在区域 1 同区域之间互传 cost 值 200。</p>
 </blockquote>
-<p>3.iMaster NCE-Campusinsight采用SNMP技术采集网络设备的性能指标和日志数据，基于真实业务流量发现网络异常</p>
-<p>A正确</p>
-<p>B错误</p>
+<p>3.iMaster NCE-Campusinsight 采用 SNMP 技术采集网络设备的性能指标和日志数据，基于真实业务流量发现网络异常</p>
+<p>A 正确</p>
+<p>B 错误</p>
 <blockquote>
 <p>答案：B、</p>
 <p>解析：</p>
-<p>iMaster NCE-CampusInsight是华为推出的园区网络分析器，颠覆传统聚焦资源状态的监控方式，通过&#x3D;&#x3D;Telemetry技术&#x3D;&#x3D;实时采集网络数据</p>
+<p>性能监控：通过 SNMP 定时轮询设备性能数据。<br>日志管理：支持 Syslog 接收设备日志，并进行分类存储与分析。<br>流量分析：通常集成 NetEngine 或 HiSec Insight 实现基于流的检测，结合 AI 算法识别异常流量（如 DDoS、病毒传播）。<br>因此，题干的说法在 技术细节上不准确，存在以下偏差：</p>
+<p>日志数据应由 Syslog 而非 SNMP 采集。<br>基于真实业务流量的异常检测需依赖流量探针（如 NetFlow），而非仅 SNMP 性能指标。</p>
 </blockquote>
 <p>4.在大中型虚拟化园区网络场景中，以下关于园区网络出口安全设计的描述中，错误的是哪一项？</p>
 <p>A.可以部署防火墙、入侵防御系统等专用安全设备，也可以部署具有安全功能的路由器</p>
 <p>B.出口区对外可以部署安全策略和入侵防御，预防非法访问和攻击</p>
-<p>C.出口区对内可以部署反病毒和URL过滤，实现病毒检测和URL访问控制</p>
-<p>D.需要进行安全区城划分，其中Trust区域通常用于定义对外提供服务的服务器所在区城</p>
+<p>C.出口区对内可以部署反病毒和 URL 过滤，实现病毒检测和 URL 访问控制</p>
+<p>D.需要进行安全区城划分，其中 Trust 区域通常用于定义对外提供服务的服务器所在区城</p>
 <blockquote>
 <p>答案：D</p>
 <p>解析：</p>
-<p>DMZ区域通常用于定义对外提供服务的服务器所在区城，trust用于定于内部网络</p>
+<p>DMZ 区域通常用于定义对外提供服务的服务器所在区城，trust 用于定于内部网络</p>
 </blockquote>
-<p>5.根据网络情况的不同，可以在网络中部署二层 Portal认证或三层 Portal认证，以下描述中错误的是哪一项？</p>
-<p>A.当客户端与接入设备之间为二层网络时，即客户端与接入设备直连（或之间只有二层设备存在），此时可配置二层 Portal认证</p>
-<p>B.当使用二层认证时，接入设备可以学习到客户端的MAC地址，则接入设备可以只利用MAC地址来识别用户</p>
-<p>C.当客户端与接入设备之间包含三层网络时，即客户端与接入设备之间存在三层转发设备，此时需要配置三层 Portal认证</p>
-<p>D.当使用三层认证时，接入设备可以学习到客户端的IP地址并利用IP地址来识别用户</p>
+<p>5.根据网络情况的不同，可以在网络中部署二层 Portal 认证或三层 Portal 认证，以下描述中错误的是哪一项？</p>
+<p>A.当客户端与接入设备之间为二层网络时，即客户端与接入设备直连（或之间只有二层设备存在），此时可配置二层 Portal 认证</p>
+<p>B.当使用二层认证时，接入设备可以学习到客户端的 MAC 地址，则接入设备可以只利用 MAC 地址来识别用户</p>
+<p>C.当客户端与接入设备之间包含三层网络时，即客户端与接入设备之间存在三层转发设备，此时需要配置三层 Portal 认证</p>
+<p>D.当使用三层认证时，接入设备可以学习到客户端的 IP 地址并利用 IP 地址来识别用户</p>
 <blockquote>
 <p>答案：B</p>
 <p>解析：</p>
-<p>只靠MAC地址来识别用户显然是不行的&#x3D;^&#x3D;</p>
+<p>只靠 MAC 地址来识别用户显然是不行的 &#x3D;^&#x3D;<br>补充：错误的选项是选项 B。因为在二层 Portal 认证中，虽然设备能获取 MAC，但实际认证可能基于 IP 地址，而不是仅仅 MAC 地址。例如，在配置 Portal 认证时，无论是二层还是三层，都需要 IP 地址来识别用户，因为 HTTP 是基于 IP 的，MAC 可能不被用来作为认证的唯一标识。比如，用户可能更换了 MAC 地址但保持同一 IP，或者相反，这时候需要正确的标识符。所以，可能选项 B 的说法是错误的，正确答案是选项 B。因为即使二层环境下，Portal 认证可能还是基于 IP 地址来识别用户，而不是仅用 MAC 地址。所以选项 B 错误。</p>
 </blockquote>
-<p>6.以下关于VXLAN虚化园区应用中的 Underlay的描述，错误的是哪一项？</p>
-<p>A.虚拟化园区方案使用VXLAN技术采用 MAC in UDP的封装方式在传统的IP网络上虚拟出一层逻辑网络</p>
-<p>B.采用 iMaster NCE-Campus实现 underlay两络路由域自动编排时仅支持 SPF路由协议</p>
-<p>C.采用 ast r NCE-Campus实现 underlay网络路由域自动编排时仅支持路由协议的单区域部署</p>
-<p>D.Underlay同络实现IP可达性，使经过VXLAN封装后的业务报文在VTEP节点之间互通</p>
+<p>6.以下关于 VXLAN 虚化园区应用中的 Underlay 的描述，错误的是哪一项？</p>
+<p>A.虚拟化园区方案使用 VXLAN 技术采用 MAC in UDP 的封装方式在传统的 IP 网络上虚拟出一层逻辑网络</p>
+<p>B.采用 iMaster NCE-Campus 实现 underlay 两络路由域自动编排时仅支持 SPF 路由协议</p>
+<p>C.采用 ast r NCE-Campus 实现 underlay 网络路由域自动编排时仅支持路由协议的单区域部署</p>
+<p>D.Underlay 同络实现 IP 可达性，使经过 VXLAN 封装后的业务报文在 VTEP 节点之间互通</p>
 <blockquote>
 <p>答案：C</p>
 <p>解析：</p>
 <p>暂无</p>
 </blockquote>
-<p>7.通过 BGP EVPN动态建立VXLAN隧道的场景中，当使用 BGP EVPN Type2路由进行主机MAC地址通告时，以下描述中正确的是哪一项？</p>
-<p>A.会同时携带具体L2 VNI、L3 VNI数值</p>
-<p>B.会携带具体的L3 VNI值</p>
-<p>C.携带的RT值为IP VPN实例中的 Export RT</p>
-<p>D.IP Address、 IP Address Length字段不会携带具体内容</p>
+<p>7.通过 BGP EVPN 动态建立 VXLAN 隧道的场景中，当使用 BGP EVPN Type2 路由进行主机 MAC 地址通告时，以下描述中正确的是哪一项？</p>
+<p>A.会同时携带具体 L2 VNI、L3 VNI 数值</p>
+<p>B.会携带具体的 L3 VNI 值</p>
+<p>C.携带的 RT 值为 IP VPN 实例中的 Export RT</p>
+<p>D.IP Address、 IP Address Length 字段不会携带具体内容</p>
 <blockquote>
 <p>答案：D</p>
 <p>解析：</p>
-<p>MAC路由中MAC Address Length和MAC Address字段为主机MAC地址，会同时携带二层VNI</p>
-<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923230132.png"></p>
+<p>MAC 路由中 MAC Address Length 和 MAC Address 字段为主机 MAC 地址，会同时携带二层 VNI</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923230132.png"><br>当 Type2 路由仅用于 MAC 地址通告（未携带 IP 地址）时，IP Address 字段和 IP Address Length 字段为空（IP Address Length 为 0）。<br>RFC 7432 明确允许 Type2 路由在仅通告 MAC 地址时省略 IP 字段，此时不会携带具体 IP 内容</p>
 </blockquote>
-<p>8.VXLAN L3 Gateway上用于实现不同VXLAN虚拟网络通信的三层逻辑接口是以下哪一项？</p>
-<p>A.VBDIF接口</p>
+<p>8.VXLAN L3 Gateway 上用于实现不同 VXLAN 虚拟网络通信的三层逻辑接口是以下哪一项？</p>
+<p>A.VBDIF 接口</p>
 <p>B.二层子接口</p>
-<p>C.VLANIF接口</p>
-<p>D.NVE接口</p>
+<p>C.VLANIF 接口</p>
+<p>D.NVE 接口</p>
 <blockquote>
 <p>答案：A</p>
 <p>解析：</p>
-<p>VBDIF接口基于BD广播域的虚接口，支持三层特性。可以实现不同BD之间、BD与非BD网络之间以及BD与三层网络之间的通信</p>
+<p>VBDIF 接口基于 BD 广播域的虚接口，支持三层特性。可以实现不同 BD 之间、BD 与非 BD 网络之间以及 BD 与三层网络之间的通信</p>
+<p>补充:</p>
+<p>VXLAN 的三层网关需通过 VBDIF 接口实现跨 VNI 的路由，而传统 VLAN 的三层网关使用 VLANIF 接口。VBDIF 是专为 VXLAN 设计的三层逻辑接口，与 BD（VXLAN 广播域）直接绑定，是不同 VXLAN 虚拟网络互通的核心组件。</p>
 </blockquote>
-<p>9.在园区VXLAN网络中，用于连接 Fabric和 Fabric外部网络的设备是以下哪一项？</p>
+<p>9.在园区 VXLAN 网络中，用于连接 Fabric 和 Fabric 外部网络的设备是以下哪一项？</p>
 <p>A.Extended</p>
 <p>B.Border</p>
 <p>C.Transparent</p>
@@ -260,32 +263,32 @@ document.addEventListener('pjax:send', () => {
 <blockquote>
 <p>答案：B</p>
 <p>解析：</p>
-<p>边界网关（Border）节点：用于实现Fabric和外部网络之间的互联互通。一般为核心交换机。 边缘（Edge）节点：Fabric边缘设备，用于连接用户侧设备及Fabric。有线用户的数据从边缘节点进入VXLAN封装。</p>
+<p>边界网关（Border）节点：用于实现 Fabric 和外部网络之间的互联互通。一般为核心交换机。 边缘（Edge）节点：Fabric 边缘设备，用于连接用户侧设备及 Fabric。有线用户的数据从边缘节点进入 VXLAN 封装。</p>
 </blockquote>
-<p>10.当某一无线用户通过 Portal认证之后，不支持对该用户授权以下事一项参数？</p>
+<p>10.当某一无线用户通过 Portal 认证之后，不支持对该用户授权以下事一项参数？</p>
 <p>A.free-rule</p>
 <p>B.UCL</p>
-<p>C.IP地址</p>
+<p>C.IP 地址</p>
 <p>D.ACL</p>
 <blockquote>
 <p>答案：C</p>
 <p>解析：</p>
-<p>UCL、ACL、free-rule，只有二层portal认证支持vlan授权，RADIUS常见的授权信息有：VLAN，ACL，UCL组</p>
-<p>用户无法授权IP地址。IP地址通过DHCP获取或者静态配置后，才可能进行portal认证。</p>
+<p>UCL、ACL、free-rule，只有二层 portal 认证支持 vlan 授权，RADIUS 常见的授权信息有：VLAN，ACL，UCL 组</p>
+<p>用户无法授权 IP 地址。IP 地址通过 DHCP 获取或者静态配置后，才可能进行 portal 认证。</p>
 </blockquote>
-<p>11.通过 BGP EVPN态建立VXLAN随道的场景中，以下关于 BGP EVPN Type3路由的作用的描述，错误的是哪一项？</p>
-<p>A.如果收到的Type3路由其携带的VTEP IP地址是三层路由可达的，则会建立一条到对端的VXLAN隧道</p>
-<p>B.Type3路由中会携带L3 VNI</p>
-<p>C.Type3路由传递二层和 VTEP IP地址信息</p>
-<p>D.在Type3路由 VTEP IP地址三层可达的情况下，如果对端与本端相同，则创建一个头端复制表，用于后续BUM报文转发</p>
+<p>11.通过 BGP EVPN 态建立 VXLAN 随道的场景中，以下关于 BGP EVPN Type3 路由的作用的描述，错误的是哪一项？</p>
+<p>A.如果收到的 Type3 路由其携带的 VTEP IP 地址是三层路由可达的，则会建立一条到对端的 VXLAN 隧道</p>
+<p>B.Type3 路由中会携带 L3 VNI</p>
+<p>C.Type3 路由传递二层和 VTEP IP 地址信息</p>
+<p>D.在 Type3 路由 VTEP IP 地址三层可达的情况下，如果对端与本端相同，则创建一个头端复制表，用于后续 BUM 报文转发</p>
 <blockquote>
 <p>答案：B</p>
 <p>解析：</p>
-<p>Type3路由中只会携带L2 VNI，不会携带L3 VNI</p>
+<p>Type3 路由中只会携带 L2 VNI，不会携带 L3 VNI</p>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923230758.png"></p>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923231044.png"></p>
 </blockquote>
-<p>12.华为SD-WAN解决方案中可以通过特定参数控制隧道建立的数量。某网络拓扑如图所示，请问该拓扑中一共能建立几条隧道？</p>
+<p>12.华为 SD-WAN 解决方案中可以通过特定参数控制隧道建立的数量。某网络拓扑如图所示，请问该拓扑中一共能建立几条隧道？</p>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923231133.png"></p>
 <p>A.2</p>
 <p>B.4</p>
@@ -294,23 +297,23 @@ document.addEventListener('pjax:send', () => {
 <blockquote>
 <p>答案：B</p>
 <p>解析：</p>
-<p>四条隧道，排列组合的问题，站点AB分别是两个出口，2*2就是四条。即是：只通过网络A，只通过网络B，先从网络A到网络B，先从网络B到网络A。共计四条</p>
+<p>四条隧道，排列组合的问题，站点 AB 分别是两个出口，2*2 就是四条。即是：只通过网络 A，只通过网络 B，先从网络 A 到网络 B，先从网络 B 到网络 A。共计四条</p>
 </blockquote>
-<p>13.GRE隧道支持使能 MPLS LDP功能</p>
-<p>A正确</p>
-<p>B错误</p>
+<p>13.GRE 隧道支持使能 MPLS LDP 功能</p>
+<p>A 正确</p>
+<p>B 错误</p>
 <blockquote>
 <p>答案：A</p>
 </blockquote>
-<p>14.以下关于GRE安全机制的描述中，错误的是哪一项？</p>
-<p>A.只有隧道两端设置的识别关键字完全一致时，GRE隧道才能建立</p>
+<p>14.以下关于 GRE 安全机制的描述中，错误的是哪一项？</p>
+<p>A.只有隧道两端设置的识别关键字完全一致时，GRE 隧道才能建立</p>
 <p>B.如果本端配置了校验和而对端没有配置，则本端不会对接收到的报文进行校验和检查，但对发送的报文进行校验和检查</p>
 <p>C.如果隧道本端配置了关健字而对端没有配置，则隧道能正常转发用户报文</p>
 <p>D.如果本端设有配置校验和而对端配置，则本端对从对端发来的报文进行校验和检查，对发送的报文不检查校验和</p>
 <blockquote>
 <p>答案：C</p>
 <p>解析：</p>
-<p>只有隧道两端设置的识别关键字完全一致时，GRE隧道才能建立，只有一边有关键字设置无法建立通道、</p>
+<p>只有隧道两端设置的识别关键字完全一致时，GRE 隧道才能建立，只有一边有关键字设置无法建立通道、</p>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923231632.png"></p>
 </blockquote>
 <p>15.网络信息采集是网络调优的前提，包括网络拓扑与接口带宽采集、链路时延采集和流量统计采集等，以下哪种技术不可用于量统计采集？</p>
@@ -321,75 +324,76 @@ document.addEventListener('pjax:send', () => {
 <blockquote>
 <p>答案：B</p>
 <p>解析：</p>
-<p>PCEP（Path Computation Element Protocol）是IETF PCE（Path Computation Element）工作组定义的基于TCP的协议。它定义了一组消息和对象，用于管理PCEP会话，以及为多域流量工程LSP（TE LSP）请求和发送路径。PCEP为PCE给PCC的域外LSP执行路径计算提供了一种机制。PCEP交互包括PCC向PCE发送的LSP状态报告，以及PCE对LSP的托管和优化。</p>
+<p>PCEP（Path Computation Element Protocol）是 IETF PCE（Path Computation Element）工作组定义的基于 TCP 的协议。它定义了一组消息和对象，用于管理 PCEP 会话，以及为多域流量工程 LSP（TE LSP）请求和发送路径。PCEP 为 PCE 给 PCC 的域外 LSP 执行路径计算提供了一种机制。PCEP 交互包括 PCC 向 PCE 发送的 LSP 状态报告，以及 PCE 对 LSP 的托管和优化。</p>
 </blockquote>
-<p>16.以下哪种技术不支持SR-MPLS?</p>
+<p>16.以下哪种技术不支持 SR-MPLS?</p>
 <p>A.BGP</p>
 <p>B.IS-IS</p>
 <p>C.LDP</p>
 <p>D.SPF</p>
 <blockquote>
 <p>答案：C</p>
+<p>LDP 是传统 MPLS 的信令协议，用于独立分配标签。SR-MPLS 的设计目标之一是 <strong>取代 LDP</strong>，两者功能冲突，无法协同工作。</p>
 </blockquote>
-<p>17.BIER作为新型的转发技术，采用基础的IGP路由协议和单播路由转发机制，使得组播接受者和组播路由器之间不需要再运行IGMP</p>
-<p>A正确</p>
-<p>B错误</p>
+<p>17.BIER 作为新型的转发技术，采用基础的 IGP 路由协议和单播路由转发机制，使得组播接受者和组播路由器之间不需要再运行 IGMP</p>
+<p>A 正确</p>
+<p>B 错误</p>
 <blockquote>
 <p>答案：B</p>
 </blockquote>
-<p>18.在客户端SSH登陆仅配置了用户名密码认证的服务器的过程中，不会经过密钥交换阶段（不会产生密钥）</p>
-<p>A正确</p>
-<p>B错误</p>
+<p>18.在客户端 SSH 登陆仅配置了用户名密码认证的服务器的过程中，不会经过密钥交换阶段（不会产生密钥）</p>
+<p>A 正确</p>
+<p>B 错误</p>
 <blockquote>
 <p>答案：B</p>
 </blockquote>
-<p>19.Python Paramiko 实现了SSH协议，在 Python Paramiko 模块中，以下哪个类用于创建SFTP会话连接并执行远程文件操作？</p>
-<p>A.Packetizer类</p>
-<p>B.Channel类</p>
-<p>C.SFTPClient类</p>
-<p>D.Transport类</p>
+<p>19.Python Paramiko 实现了 SSH 协议，在 Python Paramiko 模块中，以下哪个类用于创建 SFTP 会话连接并执行远程文件操作？</p>
+<p>A.Packetizer 类</p>
+<p>B.Channel 类</p>
+<p>C.SFTPClient 类</p>
+<p>D.Transport 类</p>
 <blockquote>
 <p>答案：C</p>
 <p>解析：</p>
-<p>Channel类：该类用于创建在SSH Transport上的安全通道。</p>
-<p>Message类：SSH Message是字节流。该类对字符串、整数、bools和无限精度整数（Python中称为long）的某些组合进行编码。 Packetizer类：数据包处理类</p>
-<p>Transport类：该类用于在现有套接字或类套接字对象上创建一个Transport会话对象。</p>
-<p>SFTPClient类：该类通过一个打开的SSH Transport会话创建SFTP会话通道并执行远程文件操作</p>
-<p>SSHClient类：SSHClient类是与SSH服务器会话的高级表示。该类集成了Transport，Channel和SFTPClient类</p>
+<p>Channel 类：该类用于创建在 SSH Transport 上的安全通道。</p>
+<p>Message 类：SSH Message 是字节流。该类对字符串、整数、bools 和无限精度整数（Python 中称为 long）的某些组合进行编码。 Packetizer 类：数据包处理类</p>
+<p>Transport 类：该类用于在现有套接字或类套接字对象上创建一个 Transport 会话对象。</p>
+<p>SFTPClient 类：该类通过一个打开的 SSH Transport 会话创建 SFTP 会话通道并执行远程文件操作</p>
+<p>SSHClient 类：SSHClient 类是与 SSH 服务器会话的高级表示。该类集成了 Transport，Channel 和 SFTPClient 类</p>
 </blockquote>
-<p>20.以下关于BGP&#x2F; MPLS IP VPN路由交互的描述，错误的是哪一项？</p>
-<p>A.出口PE在接收到入口PE发布的VPNv4路由之后，根据路由携带的RT属性，对VPNv4路由进行过滤</p>
-<p>B.出口PE可以通过BGP、IGP或静态路由的方式向远端CE发送IPv4路由</p>
-<p>C.PE与CE之间交互的是IPv4路由信息</p>
-<p>D.入口PE将从CE接收到的IPv4路由变成VNPv4路由，并根据不同VPP实例进行保存</p>
+<p>20.以下关于 BGP&#x2F; MPLS IP VPN 路由交互的描述，错误的是哪一项？</p>
+<p>A.出口 PE 在接收到入口 PE 发布的 VPNv4 路由之后，根据路由携带的 RT 属性，对 VPNv4 路由进行过滤</p>
+<p>B.出口 PE 可以通过 BGP、IGP 或静态路由的方式向远端 CE 发送 IPv4 路由</p>
+<p>C.PE 与 CE 之间交互的是 IPv4 路由信息</p>
+<p>D.入口 PE 将从 CE 接收到的 IPv4 路由变成 VNPv4 路由，并根据不同 VPP 实例进行保存</p>
 <blockquote>
 <p>答案：B</p>
 <p>解析：</p>
-<p>由骨干网的路由协议或静态路由产生，没有IGP路由协议</p>
+<p>由骨干网的路由协议或静态路由产生，没有 IGP 路由协议</p>
 </blockquote>
-<p>21.以下关于MP-BGP的指述，错误的是哪一项？</p>
-<p>A.PE与CE之间通过BGP交互路由时，需要在CE上为每个VPN实例创建BGP进程</p>
-<p>B.MP-BGP通过 MP_REACHNLRI和MP_ UREACH NLRI两种属性来通告VPNv4路由</p>
-<p>C.MP-BGP需要为VPNv4路由分配私网标签</p>
-<p>D.MP-BGP的报文类型、VPNv4路由发布策略与BGP-4相同</p>
+<p>21.以下关于 MP-BGP 的指述，错误的是哪一项？</p>
+<p>A.PE 与 CE 之间通过 BGP 交互路由时，需要在 CE 上为每个 VPN 实例创建 BGP 进程</p>
+<p>B.MP-BGP 通过 MP_REACHNLRI 和 MP_ UREACH NLRI 两种属性来通告 VPNv4 路由</p>
+<p>C.MP-BGP 需要为 VPNv4 路由分配私网标签</p>
+<p>D.MP-BGP 的报文类型、VPNv4 路由发布策略与 BGP-4 相同</p>
 <blockquote>
 <p>答案：A</p>
 <p>解析：</p>
-<p>CE是用户网络边缘设备，PE是运营商边缘路由器。首先CE是感知不到VPN的存在的，所以CE上的VPN实例的说法肯定是错误的，其次，每个路由器只能创建一个BGP进程，而不能区分VPN实例创建BGP进程</p>
+<p>CE 是用户网络边缘设备，PE 是运营商边缘路由器。首先 CE 是感知不到 VPN 的存在的，所以 CE 上的 VPN 实例的说法肯定是错误的，其次，每个路由器只能创建一个 BGP 进程，而不能区分 VPN 实例创建 BGP 进程</p>
 </blockquote>
-<p>22.如图所示，CE和PE之间运行 SPF协议，当CE1向CE2发布本站点路由时，以下描述中错误的是哪一项？</p>
+<p>22.如图所示，CE 和 PE 之间运行 SPF 协议，当 CE1 向 CE2 发布本站点路由时，以下描述中错误的是哪一项？</p>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20230923233131.png"></p>
-<p>A.当PE2收到PE1发来的BGP路由携带的 D main ID与本地相同时，对于Type3 LSA,PE2将生成Type5 LSA</p>
-<p>B.PE1配置的 D main ID可以做为BGP的扩属团体属性随路由一起发给PE2</p>
-<p>C.当PE2收到PE1发来的BGP路由携带的 D main ID与本地不同时，对于所有LSA，PE2将生成Type5 LSA或Type7 LSA</p>
-<p>D.当PE2收到PE1发来的BGP路由携带的 D main ID与本地相同时，对于 Type1 LSA和Typs2 LSA,PE2将生成Type3 LSA</p>
+<p>A.当 PE2 收到 PE1 发来的 BGP 路由携带的 D main ID 与本地相同时，对于 Type3 LSA, PE2 将生成 Type5 LSA</p>
+<p>B.PE1 配置的 D main ID 可以做为 BGP 的扩属团体属性随路由一起发给 PE2</p>
+<p>C.当 PE2 收到 PE1 发来的 BGP 路由携带的 D main ID 与本地不同时，对于所有 LSA，PE2 将生成 Type5 LSA 或 Type7 LSA</p>
+<p>D.当 PE2 收到 PE1 发来的 BGP 路由携带的 D main ID 与本地相同时，对于 Type1 LSA 和 Typs2 LSA, PE2 将生成 Type3 LSA</p>
 <blockquote>
 <p>答案：A</p>
 <p>解析：</p>
-<p>PE把从远端PE学来的BGP路由向CE发布时，需要根据域标识符的情况选择向CE发布Type3、Type5或Type7的OSPF路由。</p>
+<p>PE 把从远端 PE 学来的 BGP 路由向 CE 发布时，需要根据域标识符的情况选择向 CE 发布 Type3、Type5 或 Type7 的 OSPF 路由。</p>
 <ul>
-<li>如果本地的域标识符与BGP路由信息中携带的远端域标识符相等或相互兼容，则发布3类路由；</li>
-<li>否则，发布Type5或Type7路由。</li>
+<li>如果本地的域标识符与 BGP 路由信息中携带的远端域标识符相等或相互兼容，则发布 3 类路由；</li>
+<li>否则，发布 Type5 或 Type7 路由。</li>
 </ul>
 </blockquote>
 <p>23.有多种协议可以更改或获取网络设备数据，以下哪种协议不能用于更改网络设备数据？</p>
@@ -400,25 +404,26 @@ document.addEventListener('pjax:send', () => {
 <blockquote>
 <p>答案：A</p>
 <p>解析：</p>
-<p>IPsec是安全传输协议，其他的协议都是控制器和设备间的管理协议</p>
+<p>IPsec 是安全传输协议，其他的协议都是控制器和设备间的管理协议</p>
 </blockquote>
-<p>24.工程师经常频繁远程登录设备查看设备状态，现工程师希望通过 Python脚本实现自动远程登陆，则可以采用 Python Paramiko 库和 telnetlib库实现上述要求。使用 telentlib实现远程登陆的安全性更高。</p>
-<p>A正确</p>
-<p>B错误</p>
+<p>24.工程师经常频繁远程登录设备查看设备状态，现工程师希望通过 Python 脚本实现自动远程登陆，则可以采用 Python Paramiko 库和 telnetlib 库实现上述要求。使用 telentlib 实现远程登陆的安全性更高。</p>
+<p>A 正确</p>
+<p>B 错误</p>
 <blockquote>
 <p>答案：B</p>
+<p><code>telnetlib</code>基于Telnet协议，<strong>无加密机制</strong>，安全性极低</p>
 </blockquote>
-<p>25.以下关于 PS功能应用场景的描述，错误的是哪一项？</p>
-<p>A.使用 PS功能，在某些情况下可以减轻网络环境的影响，如向服务器传输采集的信息时， Python脚本中可以实现当网络不通时，将执行结果暂存在设备，等网络恢复后再传输到服务器的功能</p>
-<p>B.使用 PS可以实现自动检查设备健康状态的功能</p>
-<p>C.用户需要实现网络设备配置被保存后，自动发送配置文件到服务器的功能，可以通过维护助手创建定时器类型触发条件，定时执行 Python脚本来实现</p>
-<p>D.使用 PS动能实现空配置设备自动部署的场景中， Python脚本的作用是用来获取软件和配置文件服务器地址，并下载系统软件和配置文件</p>
+<p>25.以下关于 PS 功能应用场景的描述，错误的是哪一项？</p>
+<p>A.使用 PS 功能，在某些情况下可以减轻网络环境的影响，如向服务器传输采集的信息时， Python 脚本中可以实现当网络不通时，将执行结果暂存在设备，等网络恢复后再传输到服务器的功能</p>
+<p>B.使用 PS 可以实现自动检查设备健康状态的功能</p>
+<p>C.用户需要实现网络设备配置被保存后，自动发送配置文件到服务器的功能，可以通过维护助手创建定时器类型触发条件，定时执行 Python 脚本来实现</p>
+<p>D.使用 PS 动能实现空配置设备自动部署的场景中， Python 脚本的作用是用来获取软件和配置文件服务器地址，并下载系统软件和配置文件</p>
 <blockquote>
 <p>答案：C</p>
 <p>解析：</p>
-<p>暂无</p>
+<p>选项C混淆了<strong>事件触发</strong>与<strong>定时触发</strong>的逻辑。定时器无法满足“配置保存后立即上传”的实时性要求，因此描述错误。其他选项均符合PS功能的实际应用场景。</p>
 </blockquote>
-<p>26.iMaster NCE业务开放可编程使用以下哪种协议完成设备配置？</p>
+<p>26.iMaster NCE 业务开放可编程使用以下哪种协议完成设备配置？</p>
 <p>A.BGP</p>
 <p>B.SNMP</p>
 <p>C.NETCONF</p>
@@ -426,36 +431,36 @@ document.addEventListener('pjax:send', () => {
 <blockquote>
 <p>答案：C</p>
 <p>解析：</p>
-<p>网络配置协议NETCONF（Network Configuration Protocol）为网管和网络设备之间通信提供了一套协议，网管通过NETCONF协议对远端设备的配置进行下发、修改和删除等操作。网络设备提供了规范的应用程序编程接口API（Application Programming Interface），网管可以通过NETCONF使用这些API管理网络设备。</p>
+<p>网络配置协议 NETCONF（Network Configuration Protocol）为网管和网络设备之间通信提供了一套协议，网管通过 NETCONF 协议对远端设备的配置进行下发、修改和删除等操作。网络设备提供了规范的应用程序编程接口 API（Application Programming Interface），网管可以通过 NETCONF 使用这些 API 管理网络设备。</p>
 </blockquote>
 <p>27.网络切片技术可在网络中划分出独享的网络资源，用于承载高价值业务流量，以下关于网络切片的描述，错误的是哪一项？</p>
 <p>A.信道化子接口技术采用单层调度实现接口资源灵活、精细化管理，提供带宽保障</p>
-<p>B.一般可基于信道化子接口FlexE技术实现网络切片</p>
-<p>C.网络切片技术使用的层级与SR隧道不同，与SR隧道可同时使用</p>
-<p>D.FlexE技术按照TDM时隙划分资源，满足了资源独享与隔离的要求，实现对接口资源进行灵活、精细化的管理</p>
+<p>B.一般可基于信道化子接口 FlexE 技术实现网络切片</p>
+<p>C.网络切片技术使用的层级与 SR 隧道不同，与 SR 隧道可同时使用</p>
+<p>D.FlexE 技术按照 TDM 时隙划分资源，满足了资源独享与隔离的要求，实现对接口资源进行灵活、精细化的管理</p>
 <blockquote>
 <p>答案：A</p>
 <p>解析：</p>
-<p>信道化子接口：队列资源隔离，采用&#x3D;&#x3D;多层次调度&#x3D;&#x3D;实现接口资源灵活、精细化管理，提供带宽保障，并且结合控制器提供端到端资源预留。</p>
-<p>FlexE：队列和接口资源隔离， 各个资源是按照TDM时隙划分，严格隔离，满足了资源独享与隔离的要求，实现对接口资源进行灵活、精细化的管理。</p>
+<p>信道化子接口：队列资源隔离，采用 &#x3D;&#x3D;多层次调度&#x3D;&#x3D; 实现接口资源灵活、精细化管理，提供带宽保障，并且结合控制器提供端到端资源预留。</p>
+<p>FlexE：队列和接口资源隔离， 各个资源是按照 TDM 时隙划分，严格隔离，满足了资源独享与隔离的要求，实现对接口资源进行灵活、精细化的管理。</p>
 </blockquote>
-<p>28.通过 iMaster NCE-Campus部署的拟化园区网络场景中，创建VN后，还需要配置VN互通。以下关于配置VN互通的描述中，正确的是哪一项？</p>
-<p>A.实际是为VN对应的VPN- Instance部署 SPF</p>
-<p>B.实际是为VN对应的VPN- Instance创建静态路由</p>
+<p>28.通过 iMaster NCE-Campus 部署的拟化园区网络场景中，创建 VN 后，还需要配置 VN 互通。以下关于配置 VN 互通的描述中，正确的是哪一项？</p>
+<p>A.实际是为 VN 对应的 VPN- Instance 部署 SPF</p>
+<p>B.实际是为 VN 对应的 VPN- Instance 创建静态路由</p>
 <p>C.实际是部署路由策略</p>
 <p>D.实际是部署流量过滤</p>
 <blockquote>
 <p>答案：B</p>
 </blockquote>
-<p>29.以下关于VXLAN网关的描述中，错误的是哪一项？</p>
-<p>A.VBDIF是基于BD的建的辑接口，与传统网络中的MIF的概念相似</p>
-<p>B.VXLAN二层及三层网关都必须维护VBDIF接口，否则用户无法通过该接口实现正常通信</p>
-<p>C.VXLAN三层网关用于VXLAN虚拟网络的跨子网通信以及对外部网络(非VXLAN网络)的访问</p>
-<p>D.VXLAN二层网关实现流量进入VXLAN虚拟网络，也可用于实现同一VLMN虚拟网络的同子网通信</p>
+<p>29.以下关于 VXLAN 网关的描述中，错误的是哪一项？</p>
+<p>A.VBDIF 是基于 BD 的建的辑接口，与传统网络中的 MIF 的概念相似</p>
+<p>B.VXLAN 二层及三层网关都必须维护 VBDIF 接口，否则用户无法通过该接口实现正常通信</p>
+<p>C.VXLAN 三层网关用于 VXLAN 虚拟网络的跨子网通信以及对外部网络(非 VXLAN 网络)的访问</p>
+<p>D.VXLAN 二层网关实现流量进入 VXLAN 虚拟网络，也可用于实现同一 VLMN 虚拟网络的同子网通信</p>
 <blockquote>
 <p>答案：B</p>
 <p>解析：</p>
-<p>VXLAN二层网关不必维护VBDIF接口，相同VNI的通信可以直接通过隧道进行同子网之间的通信</p>
+<p>VXLAN 二层网关不必维护 VBDIF 接口，相同 VNI 的通信可以直接通过隧道进行同子网之间的通信</p>
 </blockquote>
 <p>30.在基于华为云园区网络解决方案的中小型云管理园区网络场景中，以下哪一项组件为设备自动上线提供查询服务？</p>
 <p>A.WLAN Planner</p>
@@ -468,7 +473,7 @@ document.addEventListener('pjax:send', () => {
 <p>注册查询中心为设备自动上线提供查询服务，告知设备所示控制器信息，然后由设备直接向控制器发起上线</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/110a080d0311a69c.jpg"></p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">tcmiku</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/09/23/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A31-30/">http://example.com/2023/09/23/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A31-30/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">tcmiku的档案库</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0-HCIE/">笔记 HCIE</a></div><div class="post_share"><div class="social-share" data-image="https://raw.githubusercontent.com/tcmiku/picgo/main/img/110a080d0311a69c.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/09/24/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A331-80/" title="HCIE笔试详解31-80"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/-37c1815b84d005e0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HCIE笔试详解31-80</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/04/%E6%B8%B8%E6%88%8F%E7%8E%8BMD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A1%8C%E5%9E%AB%E6%95%99%E7%A8%8B/" title="游戏王MD自定义桌垫教程"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/-7a62dea0be72a1f2.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">游戏王MD自定义桌垫教程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/01/HCIE-IGP%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE/" title="HCIE-IGP高级设置"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/03b5c36624e35adb3b1baeca6cda3aa8159ac318fd0584dcf3be778f8faa79f3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-01</div><div class="title">HCIE-IGP高级设置</div></div></a></div><div><a href="/2023/07/02/HCIE-BGP%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" title="HCIE-BGP高级特性"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/1661904195674.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-02</div><div class="title">HCIE-BGP高级特性</div></div></a></div><div><a href="/2023/09/28/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3201-250/" title="HCIE笔试详解201-250"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/1661966310762.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-28</div><div class="title">HCIE笔试详解201-250</div></div></a></div><div><a href="/2023/09/24/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A331-80/" title="HCIE笔试详解31-80"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/-37c1815b84d005e0.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-24</div><div class="title">HCIE笔试详解31-80</div></div></a></div><div><a href="/2023/09/26/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A381-200/" title="HCIE笔试详解81-200"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/d8f472572e7202d.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-26</div><div class="title">HCIE笔试详解81-200</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/tx.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">tcmiku</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/tcmiku/tcmiku.github.io"><i class="fab fa-github"></i><span>来个star</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tcmiku" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到tcmiku的档案小屋，本站图片均使用GitHub托管最好使用科学上网进行访问</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/12/01/hello-world/" title="Hello World"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/mo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2024/12/01/hello-world/" title="Hello World">Hello World</a><time datetime="2024-12-01T05:09:08.794Z" title="发表于 2024-12-01 13:09:08">2024-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/04/Docker%E8%AE%BE%E7%BD%AE%E5%9B%BD%E5%86%85%E6%BA%90/" title="Docker设置国内源"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/2395841725.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker设置国内源"/></a><div class="content"><a class="title" href="/2024/11/04/Docker%E8%AE%BE%E7%BD%AE%E5%9B%BD%E5%86%85%E6%BA%90/" title="Docker设置国内源">Docker设置国内源</a><time datetime="2024-11-04T14:03:19.000Z" title="发表于 2024-11-04 22:03:19">2024-11-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/01/%E5%8F%AF%E8%83%BD%E6%9C%89%E7%94%A8%E7%9A%84python%E5%8C%85%E6%8E%A8%E8%8D%90/" title="可能有用的python包推荐"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/gbc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="可能有用的python包推荐"/></a><div class="content"><a class="title" href="/2024/11/01/%E5%8F%AF%E8%83%BD%E6%9C%89%E7%94%A8%E7%9A%84python%E5%8C%85%E6%8E%A8%E8%8D%90/" title="可能有用的python包推荐">可能有用的python包推荐</a><time datetime="2024-10-31T16:05:04.000Z" title="发表于 2024-11-01 00:05:04">2024-11-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/14/%E5%85%B3%E4%BA%8E3ds%E6%97%A0%E6%B3%95%E5%BC%80%E6%9C%BA/" title="关于3ds无法开机"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/2bdc958b24be49e2d8b75f843d5bd32b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于3ds无法开机"/></a><div class="content"><a class="title" href="/2024/10/14/%E5%85%B3%E4%BA%8E3ds%E6%97%A0%E6%B3%95%E5%BC%80%E6%9C%BA/" title="关于3ds无法开机">关于3ds无法开机</a><time datetime="2024-10-14T14:37:16.000Z" title="发表于 2024-10-14 22:37:16">2024-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/04/Melody%E9%9F%B3%E4%B9%90%E7%B2%BE%E7%81%B5/" title="Melody音乐精灵"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/09dca08c0da3e4435d7ac7264e619ccd6e4fa33324ff95e962b91a800e2d5e11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Melody音乐精灵"/></a><div class="content"><a class="title" href="/2024/07/04/Melody%E9%9F%B3%E4%B9%90%E7%B2%BE%E7%81%B5/" title="Melody音乐精灵">Melody音乐精灵</a><time datetime="2024-07-04T04:22:07.000Z" title="发表于 2024-07-04 12:22:07">2024-07-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By tcmiku</div><div class="footer_custom_text">谁都未曾听过的初始之音——来自未来的访客 <a href="https://icp.gov.moe/?keyword=20240339" target="_blank" style = "color:pink">萌ICP备20240339号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(()=>{
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">tcmiku</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/09/23/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A31-30/">http://example.com/2023/09/23/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A31-30/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">tcmiku的档案库</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0-HCIE/">笔记 HCIE</a></div><div class="post_share"><div class="social-share" data-image="https://raw.githubusercontent.com/tcmiku/picgo/main/img/110a080d0311a69c.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/09/24/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A331-80/" title="HCIE笔试详解31-80"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/-37c1815b84d005e0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HCIE笔试详解31-80</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/04/%E6%B8%B8%E6%88%8F%E7%8E%8BMD%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A1%8C%E5%9E%AB%E6%95%99%E7%A8%8B/" title="游戏王MD自定义桌垫教程"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/-7a62dea0be72a1f2.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">游戏王MD自定义桌垫教程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/02/HCIE-BGP%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" title="HCIE-BGP高级特性"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/1661904195674.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-02</div><div class="title">HCIE-BGP高级特性</div></div></a></div><div><a href="/2023/07/01/HCIE-IGP%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE/" title="HCIE-IGP高级设置"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/03b5c36624e35adb3b1baeca6cda3aa8159ac318fd0584dcf3be778f8faa79f3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-01</div><div class="title">HCIE-IGP高级设置</div></div></a></div><div><a href="/2023/09/24/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A331-80/" title="HCIE笔试详解31-80"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/-37c1815b84d005e0.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-24</div><div class="title">HCIE笔试详解31-80</div></div></a></div><div><a href="/2023/09/28/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3201-250/" title="HCIE笔试详解201-250"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/1661966310762.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-28</div><div class="title">HCIE笔试详解201-250</div></div></a></div><div><a href="/2023/09/26/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A381-200/" title="HCIE笔试详解81-200"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/d8f472572e7202d.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-26</div><div class="title">HCIE笔试详解81-200</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/tx.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">tcmiku</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/tcmiku/tcmiku.github.io"><i class="fab fa-github"></i><span>来个star</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tcmiku" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到tcmiku的档案小屋，本站图片均使用GitHub托管最好使用科学上网进行访问</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/12/01/hello-world/" title="Hello World"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/mo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2024/12/01/hello-world/" title="Hello World">Hello World</a><time datetime="2024-12-01T05:09:08.794Z" title="发表于 2024-12-01 13:09:08">2024-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/04/Docker%E8%AE%BE%E7%BD%AE%E5%9B%BD%E5%86%85%E6%BA%90/" title="Docker设置国内源"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/2395841725.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker设置国内源"/></a><div class="content"><a class="title" href="/2024/11/04/Docker%E8%AE%BE%E7%BD%AE%E5%9B%BD%E5%86%85%E6%BA%90/" title="Docker设置国内源">Docker设置国内源</a><time datetime="2024-11-04T14:03:19.000Z" title="发表于 2024-11-04 22:03:19">2024-11-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/01/%E5%8F%AF%E8%83%BD%E6%9C%89%E7%94%A8%E7%9A%84python%E5%8C%85%E6%8E%A8%E8%8D%90/" title="可能有用的python包推荐"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/gbc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="可能有用的python包推荐"/></a><div class="content"><a class="title" href="/2024/11/01/%E5%8F%AF%E8%83%BD%E6%9C%89%E7%94%A8%E7%9A%84python%E5%8C%85%E6%8E%A8%E8%8D%90/" title="可能有用的python包推荐">可能有用的python包推荐</a><time datetime="2024-10-31T16:05:04.000Z" title="发表于 2024-11-01 00:05:04">2024-11-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/14/%E5%85%B3%E4%BA%8E3ds%E6%97%A0%E6%B3%95%E5%BC%80%E6%9C%BA/" title="关于3ds无法开机"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/2bdc958b24be49e2d8b75f843d5bd32b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于3ds无法开机"/></a><div class="content"><a class="title" href="/2024/10/14/%E5%85%B3%E4%BA%8E3ds%E6%97%A0%E6%B3%95%E5%BC%80%E6%9C%BA/" title="关于3ds无法开机">关于3ds无法开机</a><time datetime="2024-10-14T14:37:16.000Z" title="发表于 2024-10-14 22:37:16">2024-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/04/Melody%E9%9F%B3%E4%B9%90%E7%B2%BE%E7%81%B5/" title="Melody音乐精灵"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/09dca08c0da3e4435d7ac7264e619ccd6e4fa33324ff95e962b91a800e2d5e11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Melody音乐精灵"/></a><div class="content"><a class="title" href="/2024/07/04/Melody%E9%9F%B3%E4%B9%90%E7%B2%BE%E7%81%B5/" title="Melody音乐精灵">Melody音乐精灵</a><time datetime="2024-07-04T04:22:07.000Z" title="发表于 2024-07-04 12:22:07">2024-07-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2025 By tcmiku</div><div class="footer_custom_text">谁都未曾听过的初始之音——来自未来的访客 <a href="https://icp.gov.moe/?keyword=20240339" target="_blank" style = "color:pink">萌ICP备20240339号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(()=>{
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
