@@ -1,0 +1,819 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>HCIE笔试详解501-550（多选题） | tcmiku的档案库</title><meta name="author" content="tcmiku"><meta name="copyright" content="tcmiku"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="501.通过BGP EVPN动态建立VXLAN隧道的场景中，以下关于BGP EVPN Type2路由的作用的描述，正确的有哪些项？【多选题】 A.主机ARP通告可以用于抑制ARP广播 B.可以用于MAC地址通告 C.ARP类型路由包含主机路由信息 D.IRB类型路由包含ARP信息   答案：ABCD  502.通过BGPEVPN动态建立VXLAN隧道的场景中，在VTEP上通过命令查看BGPEVPN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HCIE笔试详解501-550（多选题）">
+<meta property="og:url" content="http://example.com/2025/04/16/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3501-550%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/index.html">
+<meta property="og:site_name" content="tcmiku的档案库">
+<meta property="og:description" content="501.通过BGP EVPN动态建立VXLAN隧道的场景中，以下关于BGP EVPN Type2路由的作用的描述，正确的有哪些项？【多选题】 A.主机ARP通告可以用于抑制ARP广播 B.可以用于MAC地址通告 C.ARP类型路由包含主机路由信息 D.IRB类型路由包含ARP信息   答案：ABCD  502.通过BGPEVPN动态建立VXLAN隧道的场景中，在VTEP上通过命令查看BGPEVPN">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcmiku/picgo/main/img/a6a3c520ddaa31826b7502c01d29e86c.jpg">
+<meta property="article:published_time" content="2025-04-16T07:09:19.000Z">
+<meta property="article:modified_time" content="2025-04-16T08:40:32.145Z">
+<meta property="article:author" content="tcmiku">
+<meta property="article:tag" content="笔记 HCIE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/tcmiku/picgo/main/img/a6a3c520ddaa31826b7502c01d29e86c.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/04/16/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3501-550%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":240},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":80,"languages":{"author":"作者: tcmiku","link":"链接: ","source":"来源: tcmiku的档案库","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HCIE笔试详解501-550（多选题）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-04-16 16:40:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/tx.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> tcmiku的追番列表</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> tcmiku的网页收藏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-subway"></i><span> 开往</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/tcmiku/picgo/main/img/a6a3c520ddaa31826b7502c01d29e86c.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="tcmiku的档案库"><span class="site-name">tcmiku的档案库</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> tcmiku的追番列表</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> tcmiku的网页收藏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-subway"></i><span> 开往</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HCIE笔试详解501-550（多选题）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-16T07:09:19.000Z" title="发表于 2025-04-16 15:09:19">2025-04-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-16T08:40:32.145Z" title="更新于 2025-04-16 16:40:32">2025-04-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HCIE%E7%AC%94%E8%AE%B0/">HCIE笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>20分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HCIE笔试详解501-550（多选题）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>501.通过BGP EVPN动态建立VXLAN隧道的场景中，以下关于BGP EVPN Type2路由的作用的描述，正确的有哪些项？【多选题】</p>
+<p>A.主机ARP通告可以用于抑制ARP广播</p>
+<p>B.可以用于MAC地址通告</p>
+<p>C.ARP类型路由包含主机路由信息</p>
+<p>D.IRB类型路由包含ARP信息</p>
+<blockquote>
+<p> 答案：ABCD</p>
+</blockquote>
+<p>502.通过BGPEVPN动态建立VXLAN隧道的场景中，在VTEP上通过命令查看BGPEVPN路由，查看到如图所示的路由条目，以下关于这些路由条目描述正确的是【多选题】</p>
+<p>A.这些路由条目都是TYPE3路由，如果其中携带的VTEP IP地址三层路由可达，则会建立一条到对端的VXLAN隧道。</p>
+<p>B.这些路由条目都是TYPE3路由，本端在收到之后一定会创建一个头端复制表</p>
+<p>C.这些路由条目都是TYPE2路由，其中携带了主机IP信息</p>
+<p>D.这些路由条目都是TYPE3路由，其中写到了VTEP IP地址</p>
+<blockquote>
+<p> 答案：AD</p>
+</blockquote>
+<p>503.以下关于VXLAN报文格式的描述中，正确的有哪些项?【多选题】</p>
+<p>A.UDP头部的目的端口号为4789</p>
+<p>B.VNI字段长度为24 bit</p>
+<p>C.外层封装的源目IP分别为源、目VTEP的IP地址</p>
+<p>D.UDP头部的源端口号为4789</p>
+<blockquote>
+<p>答案：ABC</p>
+<p>解析：</p>
+<p>A. UDP头部的目的端口号为4789<br>正确</p>
+<ul>
+<li>VXLAN协议规定使用UDP 4789作为标准目的端口号，该端口号由IANA（互联网地址分配机构）分配。这是VXLAN封装报文的核心标识之一。</li>
+</ul>
+<p>B. VNI字段长度为24 bit<br>正确</p>
+<ul>
+<li>VNI（VXLAN Network Identifier）是一个24位字段，可支持多达16,777,216（2^24）个逻辑分段，有效解决了传统VLAN的4094个ID限制问题。</li>
+</ul>
+<p>C. 外层封装的源目IP分别为源、目VTEP的IP地址<br>正确</p>
+<ul>
+<li>VXLAN隧道端点（VTEP）负责封包和解包。封装时：<br>外层IP头部的源IP为源VTEP的IP地址（发送端的隧道端点）。<br>外层IP头部的目的IP为目的VTEP的IP地址（接收端的隧道端点）</li>
+</ul>
+</blockquote>
+<p>504.MPLS中有转发等价类FEC的概念。以下关于FEC的描述，错误的是哪些项?【多选题】</p>
+<p>A.MPLS将具有相同转发处理方式的分组归为一类，称为FEC</p>
+<p>B.一个转发等价类FEC在所有路由器上会分配唯一的标签值</p>
+<p>C.相同FEC的分组在MPLS网络中会有不同的处理</p>
+<p>D.FEC的划分很灵活，可以是以源地址、目的地址、源端口、目的端口、协议类型或VPN等为划分依据的任意组合</p>
+<blockquote>
+<p> 答案：BC</p>
+</blockquote>
+<p>505.基于华为云广域网络解决方案架构实现SRv6 Pol icy需要使用到以下哪些关键技术?【多选题】</p>
+<p>A.BGP-LS</p>
+<p>B.NETCONF</p>
+<p>C.PCEP</p>
+<p>D.BGP IPv6 SR Policy</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>506.某台路由器的输出信息如图所示，以下描述中正确的有哪些项?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416151815.png"></p>
+<p>A.该隧道的接口IP地址是20.1. 1.2&#x2F;24</p>
+<p>B.该隧道的目的IP地址是10.0.1.1</p>
+<p>C.该隧道接口的MTU为1500 Byte</p>
+<p>D.该隧道的源IP地址是10.0.1.1</p>
+<blockquote>
+<p>答案：ABC</p>
+</blockquote>
+<p>507.YANG是NETCONF的数据建模语言，以下哪些顶属于YANG基础数据模型?【多选题】</p>
+<p>A.Leaf (叶)节点</p>
+<p>B.Tree (树)节点</p>
+<p>C.Set (集合)节点</p>
+<p>D.List (列表)节点</p>
+<blockquote>
+<p>答案：AD</p>
+<p>解析：</p>
+<p>Leaf (叶) 节点 (A)</p>
+<ul>
+<li>表示数据树中的一个叶子节点，不包含子节点，仅存储一个简单的值。<br>例如：leaf hostname { type string; } 表示设备名称，仅包含一个字符串值。</li>
+</ul>
+<p>List (列表) 节点 (D)</p>
+<ul>
+<li>用于定义具有多个实例的节点，每个实例由唯一的键值（key）标识，类似于数据库表中的行。<br>例如：list interface { key “name”; leaf name { type string; }} 可表示多个接口实例，每个接口通过名称唯一区分。</li>
+</ul>
+</blockquote>
+<p>508.下图为MPLS-VPN跨域Option C解决方案，在域内存在RR场景下，如果使用OptionC方式一，以下关于设备间邻居关系正确的有哪些选项？</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416152156.png"></p>
+<p>A.RR1和RR2之间建立VPNv4邻居关系</p>
+<p>B.ASBR1和ASBR2之间同时建立VPNv4邻居和单播BGP邻居关系</p>
+<p>C.PE1和RR1之间同时建立VPNv4邻居关系和单播BGP邻居关系</p>
+<p>D.RR1和RR2之间建立单播BGP邻居关系</p>
+<blockquote>
+<p>答案：AC</p>
+</blockquote>
+<p>509.LDP会话用于LSR之间交换标签映射、释放等消息。以下关于LDP会话建立过程的描述，正确的是哪些项？【多选题】</p>
+<p>A.两台LSR之间通过交换Hello消息来触发LDP session的建立</p>
+<p>B.KeepAlive Message用来监控LDP Session的TCP连接的完整性</p>
+<p>C.Initialization Message用来在LDP Session建立过程中协商参数</p>
+<p>D.当入节点LSR收到标签映射消息时，就完成了LDP会话的建立</p>
+<blockquote>
+<p>答案：AC</p>
+<p>解析：</p>
+<p>Hello消息（UDP组播）用于邻居发现，是触发LDP会话建立的第一步。发现邻居后，才会建立TCP连接并继续会话初始化</p>
+<p>TCP连接建立后，通过交换Initialization消息协商参数（如协议版本、标签分发方式）。参数匹配后会话才会继续建立</p>
+</blockquote>
+<p>510.R1的部分配置如图所示。关于RI上运行的OSPF协议，以下描述正确的是哪些项?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416152544.png"></p>
+<p>A.进程1和进程2的OSPF LSDB其区域0内LSA不一致</p>
+<p>B.VRF tt的路由信息会出现在0SPF进程1的路由表中</p>
+<p>C.VRF tt的路由信息不会出现在0SPF进程1的路由表中</p>
+<p>D.进程1和进程2的OSPF LSDB其区域0内LSA完全一致</p>
+<blockquote>
+<p>答案：AC</p>
+</blockquote>
+<p>511.以下关于运营商转售SD-WAN场景的描述中，正确的有哪些项?【多选题】</p>
+<p>A企业可以通过SD-WAN GW实现SD-WAN网络与传统运营商骨干网对接</p>
+<p>B运营商提供统的SD-WAN控制器为多个企业提供SD-WAN服务</p>
+<p>C企业可以作为租户，租用运营商提供的SD-WAN服务，企业租户可以管控本企业范围内所有站点的SD-WAN业务， 但是无法看到其他租户的SD-WAN业务</p>
+<p>D企业可以通过运营商分配的租户权限对自己的SD-WAN业务进行管控，也可以托管给运营商，由运营商对该企业SD- WANN业务进行管控</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>512.VXLAN虚拟化园区网络中可以使用BGP EVPN作为控制面协议，在虚拟化园区网络场景中未使用以下哪些类型的EVPN路由？【多选题】</p>
+<p>A.Type4</p>
+<p>B.Type2</p>
+<p>C.Type3</p>
+<p>D.Type1</p>
+<blockquote>
+<p>答案：AD</p>
+<p>解析：</p>
+<ul>
+<li><p>Type2和Type3是VXLAN EVPN的必用路由类型，因此一定被使用。</p>
+</li>
+<li><p>Type1和Type4仅在多归、冗余接入等复杂场景中需要。</p>
+</li>
+<li><p>虚拟化园区网络通常为简单二层扩展架构，不涉及多归特性，因此未使用Type1和Type4。</p>
+</li>
+</ul>
+</blockquote>
+<p>513.在华为云园区网络解决方案中，AP支持以下哪些上线方式？【多选题】</p>
+<p>AWeb网管方式</p>
+<p>B.命令行方式</p>
+<p>C.CloudCampus APP方式</p>
+<p>D.注册中心查询方式</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>514.在提高承载网络可靠性时，可能会用到以下哪些技术?【多选题】</p>
+<p>A.PIM-SM</p>
+<p>B.Anycast FRR</p>
+<p>C.Mirror SID</p>
+<p>D.BFD&#x2F; SBFD</p>
+<blockquote>
+<p>答案：BCD</p>
+</blockquote>
+<p>515.网络管理员希望使用ACL匹配特定的路由条目，以下哪些路由条目会被图中的ACL规则匹配?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416153557.png"></p>
+<p>A.10.0.2.0&#x2F;24</p>
+<p>B.10.0.0.0&#x2F;24</p>
+<p>C.10.0. 1.0&#x2F;24</p>
+<p>D.10.0.0.1&#x2F;32</p>
+<blockquote>
+<p>答案：AB</p>
+</blockquote>
+<p>516.信道化子接口或FlexE技术可用于实现网络切片，但这两种技术的应用场景稍有不同。以下关于这两种技术的描述，正确的有哪些项?【多选题】</p>
+<p>A.组网中跨越OTN设备时只能部署基于FlexE技术的网络切片</p>
+<p>B.50GE以下接口推荐采用信道化接口技术进行资源预留</p>
+<p>C.组网中50GE及以上接口推荐采用F1exE技术进行资源预留</p>
+<p>D.组网中跨越MSTP设备时只能部署基于信道化子接口的网络切片</p>
+<blockquote>
+<p>答案：BC</p>
+</blockquote>
+<p>517.以下关于URI和URL的描述，正确的有哪些项？【多选题】</p>
+<p>A.<a target="_blank" rel="noopener" href="http://www.ietf.org/rfc/rfc2396.txt%E5%92%8Cftp://ftp.is.co.za/rfc.rfc1808.txt%E9%83%BD%E5%B1%9E%E4%BA%8EURL">http://www.ietf.org/rfc/rfc2396.txt和ftp://ftp.is.co.za/rfc.rfc1808.txt都属于URL</a></p>
+<p>B.URL是Uniform Resource Locator，统一资源定位符，它是一种URI，即URL可以用来标识一个资源，而且还指明了如何定位这个资源</p>
+<p>C.REST从资源的角度来观察整个网络，分布在各处的资源由URI确定，而客户端的应用通过URL来获取资源</p>
+<p>D.URI是Uni form Resource Identifier，统一资源标识符，用来唯一的标识一个资源</p>
+<blockquote>
+<p> 答案：ABCD</p>
+</blockquote>
+<p>518.在基于华为云园区网络解决方案的中小型云管理园区网络场景中，支持通过注册查询中心方式进行上线的设备包括以下哪些项?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416154302.png"></p>
+<p>A.AP</p>
+<p>B.AR</p>
+<p>C.SW</p>
+<p>D.FW</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>519.华为SD-WAN解决方案中，关于Hub-Spoke拓扑的描述，正确的有哪些项？【多选题】</p>
+<p>AHub-Spoke拓扑模式支持双Hub站点组网</p>
+<p>BHub-Spoke拓扑模式支持基于网段的Hub站点双活</p>
+<p>CHub-Spoke拓扑模式支持基于Spoke站点的Hub站点双活</p>
+<p>DHub-Spoke拓扑模式支持四Hub站点组网</p>
+<blockquote>
+<p>答案：ABC</p>
+</blockquote>
+<p>520.华为SD-WAN解决方案支持以下哪些ZTP开局方式?【多选题】</p>
+<p>A命令行开局</p>
+<p>B U盘开局</p>
+<p>C邮件开局</p>
+<p>D DHCP开局</p>
+<blockquote>
+<p>答案：BCD</p>
+<p>解析：</p>
+<p>ZTP（Zero Touch Provisioning，零接触部署）的概念。ZTP就是说设备在启动时能够自动获取配置，无需手动干预。</p>
+</blockquote>
+<p>521.以下关于策略联动方案的描述中，正确的有哪些项?【多选题】</p>
+<p>A.认证控制点与认证执行点之间建立CAPWAP隧道，通过该隧道完成认证控制设备和认证执行设备之间的用户关联、消息通信、用户授权策略下发、用户同步等处理</p>
+<p>B.由于使用了CAPWAP隧道，所以认证执行点设备无需开启BPDU透传功能</p>
+<p>C.认证控制点设备负责对接入网络的用户身份进行合法性认证，并指定身份合法的用户所能拥有的网络访问权限，即用户能够访问哪些资源</p>
+<p>D.认证执行点设备负责执行用户的网络访问策略，即用户完成认证之后访问网络时，执行对应的访问策略，如用户所属VLAN、ACL、UCL组等</p>
+<blockquote>
+<p> 答案：ACD</p>
+</blockquote>
+<p>522.下面关于Network-Summary-LSA描述正确的是:【多选题】</p>
+<p>A.Network - Summary-LSA中的Link State ID被设置成目的网络的IP地址</p>
+<p>B.Network - Summary-LSA中的Metric被设置成从该ABR到达目的网段的开销值</p>
+<p>C.Network Summary -LSA中的Net mask被设置成目的网段的网络掩码</p>
+<p>D.Network- Summary LSA是由ASBR产生的</p>
+<blockquote>
+<p>答案：ABC</p>
+</blockquote>
+<p>523.通过BGP EVPN动态建立VXLAN隧道的场景中，以下关于BGP EVPN原理的描述，正确的有哪些项？【多选题】</p>
+<p>A使用MP＿REACH＿NLRI携带RD值</p>
+<p>B通过扩展BGP新定义了几种BGP EVPN路由</p>
+<p>C使用MP＿REACH＿NLRI携带RT值</p>
+<p>D使用MP＿REACH＿NLRI携带路由信息</p>
+<blockquote>
+<p>答案：ABD</p>
+<p>解析：</p>
+<p>RD在EVPN NLRI中通过MP_REACH_NLRI传递（A正确）<br>EVPN新增多种路由类型（B正确）<br>RT通过扩展团体属性（非NLRI）传递（C错误）<br>EVPN路由的详细信息通过MP_REACH_NLRI承载（D正确）</p>
+</blockquote>
+<p>524.以下关于SR-MPLS特点的描述，正确的有哪些项?【多选题】</p>
+<p>A采用源路由技术，提供网络和上层应用快速交互的能力</p>
+<p>B当使用显式路径时，只支持控制器计算路径</p>
+<p>C高效TI-LFA FRR保护，实现路径故障的快速恢复</p>
+<p>D通过对现有协议(例如IGP)进行扩展，能使现有网络更好地平滑演进</p>
+<blockquote>
+<p>答案：ACD</p>
+</blockquote>
+<p>525.某企业的广域承载网络需要支持IPv 4和IPv6网络，且有部署SRv6的需求，则在进行该网络的IP地址规划时，需要规划以下哪些参数?【多选题】</p>
+<p>A.IPv6地址</p>
+<p>B.SRv6 Locator</p>
+<p>C.IPv 4地址</p>
+<p>D.SRv6 Function</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>526.网络设备的统一监控和性能管理是运维平台的重 要功能。设备的监控数据包括数据、控制和管理平面数据。以下哪些项不属于控制平面数据?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416155819.png"></p>
+<p>A.BGP邻居</p>
+<p>B.端口流量</p>
+<p>C.CPU转速</p>
+<p>D.路由信息</p>
+<blockquote>
+<p>答案：BC</p>
+</blockquote>
+<p>527.IPsec支持的封装模式有以下哪些项？【多选题】</p>
+<p>A路由模式</p>
+<p>B传输模式</p>
+<p>C交换模式</p>
+<p>D隧道模式</p>
+<blockquote>
+<p> 答案：BD</p>
+<p>解析：</p>
+<p>传输模式（Transport Mode）</p>
+<ul>
+<li>在传输模式下，IPsec仅对IP数据包的有效载荷（Payload）进行加密或认证，原始IP头保持不变。此模式适用于端到端通信（如主机到主机），保留源和目的IP地址的可见性。</li>
+</ul>
+<p>隧道模式（Tunnel Mode）</p>
+<ul>
+<li>在隧道模式下，IPsec会封装整个原始IP数据包，并添加新的IP头。新的IP头通常指向VPN网关，隐藏原始通信双方的IP地址。此模式常用于站点到站点的VPN（如网络到网络的连接）。</li>
+</ul>
+</blockquote>
+<p>528.防火墙双机热备场景下，以下哪些情况会使本端设备主动发送VGMP报文?【多选题】</p>
+<p>A优先级增加</p>
+<p>B双机热备功能关闭</p>
+<p>C双机热备功能开启</p>
+<p>D链路探测报文超时</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>529.传统网络所面临的服务质量问题主要由拥塞引起，可通过拥塞避免和拥塞管理降低网络拥塞对业务带来的影响，以下描述中正确的有哪些项?【多选题】</p>
+<p>A.可以通过尾部丢弃或TRED实现拥塞避免功能</p>
+<p>B.拥塞管理使用队列技术，将报文缓存于不同队列中，对不同的队列分组和应用调度算法，以实现对不同优先级报文的差异化处理</p>
+<p>C.拥塞避免是指通过监视网络资源（如队列或内存缓冲区）的使用情况,在拥塞发生或有加剧趋势时主动丢弃报文，通过调整网络的流量来解除网络过载的一种流量控制机制</p>
+<p>D.队列调度算法包括WFQ、SP和WRR等</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>530.以下关于SRv6 Policy的候选路径的描述，正确的有哪些项?【多选题】</p>
+<p>A.候选路径之间可以形成主备路径，而多个Segment List之 间可以实现负载分担</p>
+<p>B.一个SRv6 Policy可以包含多个候选路径</p>
+<p>C.一个候选路径可以包含多个Segment List, 每个Segment List携带权重属性</p>
+<p>D.优先级最高的有效候选路径作为SRv6 Policy的主路径</p>
+<blockquote>
+<p>答案：ABCD</p>
+<p>解析：</p>
+<p>SRv6 Policy通过候选路径的优先级实现主备关系，同一候选路径内通过Segment List权重实现负载分担。候选路径和Segment List的层次化设计提供了灵活、高可用的流量调度方案。</p>
+</blockquote>
+<p>531.华为网络设备OPS (Open Progranmability System，开放可编程系统)功能利用HTTP协议的方法对网络设备的管理对象进行访问。为方便用户编写脚本，华为提供了OPS功能的Python脚本模板。以下关于OPS脚本模板中0PSConnection类的方法，描述错误的有哪些项?多选【多选题】</p>
+<p>A.# 修改设备资源操作 <code>def set(self, uri, req data) : ret = self. rest_ call (&quot;POST，uri, req _data) return ret</code></p>
+<p>B.# 查询设备资源操作 <code>def get(self, uri, req data = None) : ret = self. rest_ call (&quot;GET&quot;, uri, req _data) return ret</code></p>
+<p>C.# 删除设备资源操作 <code>def delete(self, uri, req data) : ret = self. rest_ call (&quot;DELETE&quot;, uri, req data) return ret</code></p>
+<p>D.# 创建设备资源操作 <code>def create (self,uri, req data) : ret = self. rest_ call(&quot;PUT&quot;，uri, req _data) return ret</code></p>
+<blockquote>
+<p>答案：AD</p>
+</blockquote>
+<p>532.RR在华为SD-WAN解决方案中扮演着非常重要的角色，因此不同的场景下RR的部署方式有所不同，则RR有以下哪些部署方式?【多选题】</p>
+<p>A.RR与站点共部署</p>
+<p>B.RR部分独立部署</p>
+<p>C.RR独立部署</p>
+<p>D.RR多区域部署</p>
+<blockquote>
+<p>答案：ABD</p>
+</blockquote>
+<p>533.以下哪些阶段的SSH会话是加密传输的?【多选题】</p>
+<p>A用户认证阶段</p>
+<p>B会话交互阶段</p>
+<p>C版本协商阶段</p>
+<p>D密钥交换阶段</p>
+<blockquote>
+<p>答案：AB</p>
+<p>解析：</p>
+<p>根据SSH协议的工作流程，各阶段是否加密如下分析：</p>
+<p>版本协商阶段（C选项）</p>
+<ul>
+<li>在此阶段，客户端和服务器交换支持的SSH版本信息（如SSH-1或SSH-2）。此时密钥尚未生成，数据传输是明文的，因此未加密。</li>
+</ul>
+<p>密钥交换阶段（D选项）</p>
+<ul>
+<li>双方协商加密算法并通过Diffie-Hellman等机制生成共享密钥。尽管此阶段涉及密钥生成的关键步骤，但交换的具体参数（如公钥材料）仍以明文传输，依赖算法本身的安全性（而非加密通道）来抵御攻击。因此，该阶段未加密。</li>
+</ul>
+<p>用户认证阶段（A选项）</p>
+<ul>
+<li>完成密钥交换后，会话密钥已生成，后续所有通信均使用该密钥加密。认证信息（如密码或公钥）通过加密通道传输，此阶段是加密的。</li>
+</ul>
+<p>会话交互阶段（B选项）</p>
+<ul>
+<li>认证通过后，用户与服务器交互的实际数据（如命令、文件传输）始终应用会话密钥加密，因此此阶段是加密的。</li>
+</ul>
+</blockquote>
+<p>534.下某虚拟化园区网络如图所示，关于该网络准入认证的描述中，正确的有哪些选项？【多选题】</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416161308.png"></p>
+<p>A.终端需要先将身份凭证发送给Edge,再由Edge上送认证服务器</p>
+<p>B.该网络可以通过iMaster NCE-Campus内置服务器提供认证功能</p>
+<p>C.针对IP电话终端,可以通过部署802.1X认证实现准入控制</p>
+<p>D.终端认证通过后,会获得相应的授权信息</p>
+<blockquote>
+<p>答案：ABD</p>
+</blockquote>
+<p>535.DHCP绑定表可以包含以下哪些信息?【多选题】</p>
+<p>A.租约时间</p>
+<p>B.端口和UDP端口</p>
+<p>C.MAC地址</p>
+<p>D.IP地址</p>
+<blockquote>
+<p>答案：ACD</p>
+</blockquote>
+<p>536.通过BGP EVPN动态建立VXLAN隧道的场景中，BGP EVPN Type2路由被用于传递IRB类型路由时，携带的信息包括以下哪些项？【多选题】</p>
+<p>A三层VNI</p>
+<p>B主机IP地址</p>
+<p>C二层VNI</p>
+<p>D主机MAC地址</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>537.以下哪些原因可能导致局域网同一VLAN内的主机无法互通?【多选题】</p>
+<p>A交换机上配置了错误的端口和MAC地址绑定</p>
+<p>B交换机上配置了端口隔离</p>
+<p>C交换机MAC地址学习错误</p>
+<p>D接口被人为shutdown或物理接口损坏</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>538.某台路由器的输出信息如图所示，以下关于导致OSPF邻接关系无法正常建立的原因，正确的是哪些项？</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416161702.png"></p>
+<p>A.Hello报文发送间隔不致</p>
+<p>B.区域类型不一致</p>
+<p>C.接口的IP地址掩码不一致</p>
+<p>D.区域号码不一致</p>
+<blockquote>
+<p>答案：AD</p>
+</blockquote>
+<p>539.某园区部署了IPv6进行业务测试，该网络中有4台路由器.运行0SPFv3实现IPv6网络的互联互通。如图所示，某工程师查看R2的L.SDB。截取了其中一条Link LSA。 以下关于该LSA的描述，正确的是哪些项?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416161832.png"></p>
+<p>A.R2接口GE0&#x2F;0&#x2F;0的IPv6地址前缀: 2001 :DB8:2345:23; :&#x2F;64</p>
+<p>B.R2接口GE0&#x2F;0&#x2F;0的链路本地地址为: FE8O: :2EO:FCFF :FECD:4F79</p>
+<p>C.产生该LSA的路由器是R2</p>
+<p>D.该LSA显示R2不支持外部路由，但是参与IPv6的路由计算</p>
+<blockquote>
+<p>答案：ABC</p>
+</blockquote>
+<p>540.以下关于SR-MPLS Policy候选路径的描述，正确的有哪些项？【多选题】</p>
+<p>A候选路径之间和多个Segment List之间都可以分别实现负载分担</p>
+<p>B一个候选路径可以包含多个Segment List,每个Segment List携带权重属性</p>
+<p>C一个SR-MPLS Policy可以包含多个候选路径，每个候选路径携带各自的优先级属性</p>
+<p>D优先级最高的有效候选路径作为SR-MPLS Policyl的主路径</p>
+<blockquote>
+<p>答案：BCD</p>
+<p>解析：</p>
+<p>候选路径之间无负载分担机制</p>
+</blockquote>
+<p>541.华为网络设备OPS（Open Programmability System，开放可编程系统）功能提供网络设备的开放可编程能力，赋予用户二次开发的能力，以下关于华为网络设备OPS功能的描述，正确的有哪些项？【多选题】</p>
+<p>A.Python脚本也可以在用户本地PC运行，调用网络设备开放的RESTful API接口</p>
+<p>B.借助OPS功能可以实现空配置设备自动部署的功能</p>
+<p>C.用户可以通过命令行手动运行Python脚本</p>
+<p>D.用户可以通过配置维护助手来运行Python脚本</p>
+<blockquote>
+<p>答案：BCD</p>
+</blockquote>
+<p>542.华为设备可以针对哪些报文进行流量抑制?【多选题】</p>
+<p>A.组播</p>
+<p>B.已知单播</p>
+<p>C.广播</p>
+<p>D.未知单播</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>543.以下关于MPLS转发机制的描述，正确的是哪些项？【多选题】</p>
+<p>A.如果Tunnel ID值为0x0，则进入MPLS转发流程</p>
+<p>B.如果Tunnel ID值不为0x0，则进入正常的IP转发流程</p>
+<p>C.系统自动为给使用隧道的上层应用分配一个ID，也称为Tunnel ID</p>
+<p>D.当IP报文进入MPLS域时，首先查看的是FIB表</p>
+<blockquote>
+<p>答案：CD</p>
+</blockquote>
+<p>544.如图所示，四台路由器运行IS-IS.并且都是Leve1-1-2路由器，区域号如图所示，下列说法中正确的是?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416162838.png"></p>
+<p>A.R1和R3只能建立Leve1-2的邻居关系</p>
+<p>B.R3和R4同时建立Leve1-1和Leve1-2的邻居关系</p>
+<p>C.R1和R2只能建立Leve1-1的邻居关系</p>
+<p>D.R1和R4只能建立Leve1-2的邻居关系</p>
+<blockquote>
+<p>答案：AD</p>
+</blockquote>
+<p>545.通过IMasterNCE-Campus部署的虚拟化园区网络场景中，在创建Fabric的外部网络时，需要配置的参数信息，包括以下哪些项?【多选题】</p>
+<p>A互联IP地址</p>
+<p>B互联端口</p>
+<p>C环回口地址</p>
+<p>D外部服务地址</p>
+<blockquote>
+<p>答案：ABD</p>
+<p>解析：</p>
+<p>在iMaster NCE-Campus中，外部网络的创建需要明确物理&#x2F;逻辑接口（端口）、互联IP以及对外服务地址的直接配置，而环回口属于设备内部配置，与此场景无关</p>
+</blockquote>
+<p>546.以下哪些技术能被用于建立企业广域VPN?【多选题】</p>
+<p>A.L2TP VPN</p>
+<p>B.IPsec VPN</p>
+<p>C.MPLS VPN</p>
+<p>D.DSVPN</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>547.Tel emetry网络模型分广义和狭义两种，其中狭义Telemetry (即设备层面的Telemetry)包含哪些模块?【多选题】</p>
+<p>A数据生成</p>
+<p>B数据订阅</p>
+<p>C数据推送</p>
+<p>D数据源</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p>548.某路由器使能了SRv6功能，并且进行了如图所示配置，则以下关于该配置的描述，正确的有哪些项?</p>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/20250416163307.png"></p>
+<p>A.该节点的1ocator为2001 :DB8:ABCD::</p>
+<p>B.该节点的args字段占用32位</p>
+<p>C.该节点的静态段占用32位</p>
+<p>D.该节点的动态段占用32位</p>
+<blockquote>
+<p>答案：ACD</p>
+</blockquote>
+<p>549.iFIT通过在业务流中插入报文头做染色标记，以此实现端到端时延和丢包等数据统计。以下关于iFIT的描述， 正确的有哪些项?【多选题】</p>
+<p>A.网络设备通过Tel emetry技术向控制器上报信息，控制器通过计算获得时延和丢包等信息</p>
+<p>B.无论是MPL S场景下还是SRv6场景下， iFII都是带内检测， 因此可实时感知业务流状态</p>
+<p>C.iFIT for SRv6场景通过SRH拓展头部中的0ption TLV携带iFIT相关信息</p>
+<p>D.iFIT for SR&#x2F;IPLS场景中，通过标签值12来指示iFIT头部</p>
+<blockquote>
+<p>答案：BCD</p>
+</blockquote>
+<p>550.在SSH公钥认证过程中，服务器通过公钥解密客户端生成的数字签名，完成用户认证。对于SSH数字签名的生成需要以下哪些对象参与?【多选题】</p>
+<p>A公钥</p>
+<p>B公钥算法</p>
+<p>C用户名</p>
+<p>D私钥</p>
+<blockquote>
+<p>答案：ABCD</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/a6a3c520ddaa31826b7502c01d29e86c.jpg"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">tcmiku</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/04/16/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3501-550%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/">http://example.com/2025/04/16/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3501-550%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">tcmiku的档案库</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0-HCIE/">笔记 HCIE</a></div><div class="post_share"><div class="social-share" data-image="https://raw.githubusercontent.com/tcmiku/picgo/main/img/a6a3c520ddaa31826b7502c01d29e86c.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2025/04/15/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3451-500%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/" title="HCIE笔试详解451-500（多选题）"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/a44b8ac620e3d4d6d083f7c840f796da.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HCIE笔试详解451-500（多选题）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/01/HCIE-IGP%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE/" title="HCIE-IGP高级设置"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/03b5c36624e35adb3b1baeca6cda3aa8159ac318fd0584dcf3be778f8faa79f3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-01</div><div class="title">HCIE-IGP高级设置</div></div></a></div><div><a href="/2023/07/02/HCIE-BGP%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" title="HCIE-BGP高级特性"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/1661904195674.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-02</div><div class="title">HCIE-BGP高级特性</div></div></a></div><div><a href="/2023/09/28/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3201-250/" title="HCIE笔试详解201-250"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/1661966310762.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-28</div><div class="title">HCIE笔试详解201-250</div></div></a></div><div><a href="/2023/09/23/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A31-30/" title="HCIE笔试详解1-30"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/110a080d0311a69c.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-23</div><div class="title">HCIE笔试详解1-30</div></div></a></div><div><a href="/2025/04/08/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3251-300/" title="HCIE笔试详解251-300"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/VZ%607XE%60U%5D6ZQ%5BUDQDYPN5RN.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-08</div><div class="title">HCIE笔试详解251-300</div></div></a></div><div><a href="/2025/04/09/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3301-350/" title="HCIE笔试详解301-350"><img class="cover" src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/cccb1a4889bcf5f0131e2f11107f50a0.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-04-09</div><div class="title">HCIE笔试详解301-350</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/tx.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">tcmiku</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/tcmiku/tcmiku.github.io"><i class="fab fa-github"></i><span>来个star</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tcmiku" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到tcmiku的档案小屋，本站图片均使用GitHub托管最好使用科学上网进行访问</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/04/16/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3501-550%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/" title="HCIE笔试详解501-550（多选题）"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/a6a3c520ddaa31826b7502c01d29e86c.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HCIE笔试详解501-550（多选题）"/></a><div class="content"><a class="title" href="/2025/04/16/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3501-550%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/" title="HCIE笔试详解501-550（多选题）">HCIE笔试详解501-550（多选题）</a><time datetime="2025-04-16T07:09:19.000Z" title="发表于 2025-04-16 15:09:19">2025-04-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/15/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3451-500%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/" title="HCIE笔试详解451-500（多选题）"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/a44b8ac620e3d4d6d083f7c840f796da.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HCIE笔试详解451-500（多选题）"/></a><div class="content"><a class="title" href="/2025/04/15/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3451-500%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/" title="HCIE笔试详解451-500（多选题）">HCIE笔试详解451-500（多选题）</a><time datetime="2025-04-15T02:52:59.000Z" title="发表于 2025-04-15 10:52:59">2025-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/12/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3406-450%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/" title="HCIE笔试详解406-450（多选题）"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/soyolive.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HCIE笔试详解406-450（多选题）"/></a><div class="content"><a class="title" href="/2025/04/12/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3406-450%EF%BC%88%E5%A4%9A%E9%80%89%E9%A2%98%EF%BC%89/" title="HCIE笔试详解406-450（多选题）">HCIE笔试详解406-450（多选题）</a><time datetime="2025-04-12T07:52:16.000Z" title="发表于 2025-04-12 15:52:16">2025-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/11/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3351-405/" title="HCIE笔试详解351-405"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/GBC.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HCIE笔试详解351-405"/></a><div class="content"><a class="title" href="/2025/04/11/HCIE%E7%AC%94%E8%AF%95%E8%AF%A6%E8%A7%A3351-405/" title="HCIE笔试详解351-405">HCIE笔试详解351-405</a><time datetime="2025-04-11T05:01:10.000Z" title="发表于 2025-04-11 13:01:10">2025-04-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/10/%E5%8A%A8%E6%80%81MPLS/" title="动态MPLS"><img src="https://raw.githubusercontent.com/tcmiku/picgo/main/img/Konachan.com%20-%20388144%20aliasing%20arknights%20blue_eyes%20blush%20boots%20building%20dress%20drink%20foxgirl%20garter%20gloves%20group%20horns%20long_hair%20pantyhose%20red_eyes%20tail%20twintails%20wink.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="动态MPLS"/></a><div class="content"><a class="title" href="/2025/04/10/%E5%8A%A8%E6%80%81MPLS/" title="动态MPLS">动态MPLS</a><time datetime="2025-04-10T05:42:05.000Z" title="发表于 2025-04-10 13:42:05">2025-04-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2025 By tcmiku</div><div class="footer_custom_text">谁都未曾听过的初始之音——来自未来的访客 <a href="https://icp.gov.moe/?keyword=20240339" target="_blank" style = "color:pink">萌ICP备20240339号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://tcmiku.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://tcmiku.netlify.app/.netlify/functions/twikoo',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.textContent = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="xxxx"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="miku,超可爱,是不是" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:24%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://raw.githubusercontent.com/tcmiku/picgo/main/img/1673431932554.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/教程/&quot;);" href="javascript:void(0);">教程</a><span class="categoryBar-list-count">17</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://raw.githubusercontent.com/tcmiku/picgo/main/img/1666706075263.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/HCIE笔记/&quot;);" href="javascript:void(0);">HCIE笔记</a><span class="categoryBar-list-count">15</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://raw.githubusercontent.com/tcmiku/picgo/main/img/-5dbebfceaa1510bf.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/Python/&quot;);" href="javascript:void(0);">Python</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(https://raw.githubusercontent.com/tcmiku/picgo/main/img/1675320969463.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/开发/&quot;);" href="javascript:void(0);">开发</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/日常/&quot;);" href="javascript:void(0);">日常</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr"></span></li><li class="categoryBar-list-item" style="background:url(undefined);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/游戏王/&quot;);" href="javascript:void(0);">游戏王</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr"></span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/tcmiku/tcmiku.github.io" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '700ms');
+    arr[i].setAttribute('data-wow-delay', '350ms');
+    arr[i].setAttribute('data-wow-offset', '50');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__fadeInRight');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body></html>
